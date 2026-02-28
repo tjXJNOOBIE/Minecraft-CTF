@@ -1,2 +1,3 @@
-# Minecraft-CTF
-Short Minecraft CTF Minigame
+# Table of Contents
+I.
+II.
