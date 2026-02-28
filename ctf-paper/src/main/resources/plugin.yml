@@ -1,0 +1,19 @@
+name: MinecraftCTF
+version: '${version}'
+main: dev.tjxjnoobie.ctf.Main
+api-version: '1.21'
+authors: [TJ]
+commands:
+  ctf:
+    description: CTF match command
+    usage: /ctf <join|leave|setflag|setlobby|setspawn|setreturn|removereturn|setgametime|canbuild|start|stop|score|debug|simulate [mode]>
+permissions:
+  ctf.admin:
+    description: Allows admin CTF commands
+    default: op
+  ctf.debug:
+    description: Allows players to subscribe to CTF debug feed
+    default: op
+  ctf.simulate:
+    description: Prints instructions for running local simulation bots
+    default: op
