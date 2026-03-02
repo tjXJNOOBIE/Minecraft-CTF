@@ -1,0 +1,58 @@
+lobby-spawn:
+  world: lobby
+  x: 7.0
+  y: 65.0
+  z: 2.0
+  yaw: 0.0
+  pitch: 0.0
+
+team-spawns:
+  red:
+    world: lobby
+    x: 2.0
+    y: 65.0
+    z: 2.0
+    yaw: 0.0
+    pitch: 0.0
+  blue:
+    world: lobby
+    x: 12.0
+    y: 65.0
+    z: 2.0
+    yaw: 180.0
+    pitch: 0.0
+
+return-points:
+  red:
+    "0":
+      world: lobby
+      x: 2.0
+      y: 65.0
+      z: 2.0
+      yaw: 0.0
+      pitch: 0.0
+  blue:
+    "0":
+      world: lobby
+      x: 12.0
+      y: 65.0
+      z: 2.0
+      yaw: 180.0
+      pitch: 0.0
+
+flags:
+  red:
+    world: lobby
+    x: 2.0
+    y: 64.0
+    z: 2.0
+    material: RED_STAINED_GLASS
+  blue:
+    world: lobby
+    x: 12.0
+    y: 64.0
+    z: 2.0
+    material: BLUE_STAINED_GLASS
+
+capture-zone:
+  radius: 3.0

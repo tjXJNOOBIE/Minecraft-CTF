@@ -1,0 +1,183 @@
+prefix: "&7[&b&lC&6&lT&c&lF&7] "
+debug:
+  prefix: "&8[&aDEBUG&8] &7"
+
+error:
+  console_not_allowed: "&cConsole cannot perform this command."
+  no_permission: "&cYou do not have permission to use this command."
+  usage:
+    ctf_join: "&cUsage: /ctf join <red|blue>"
+    ctf_leave: "&cUsage: /ctf leave"
+    ctf_score: "&cUsage: /ctf score"
+    ctf_setflag: "&cUsage: /ctf setflag <red|blue>"
+    ctf_setlobby: "&cUsage: /ctf setlobby"
+    ctf_setspawn: "&cUsage: /ctf setspawn <red|blue>"
+    ctf_setreturn: "&cUsage: /ctf setreturn <red|blue>"
+    ctf_removereturn: "&cUsage: /ctf removereturn"
+    ctf_setgametime: "&cUsage: /ctf setgametime <seconds>"
+    ctf_setscore: "&cUsage: /ctf setscore <red|blue> <score> [confirm]"
+    ctf_setscorelimit: "&cUsage: /ctf setscorelimit <limit> [confirm]"
+    ctf_canbuild: "&cUsage: /ctf canbuild"
+    ctf_start: "&cUsage: /ctf start"
+    ctf_stop: "&cUsage: /ctf stop"
+    ctf_debug: "&cUsage: /ctf debug"
+    ctf_simulate: "&cUsage: /ctf simulate [mode]"
+  subcommand_unknown: "&cUnknown subcommand."
+  start_failed: "&cCTF could not start. Ensure both flags are set and no match/countdown is already active."
+  start_not_enough_players: "&4Can't start game: &8\"&4Not enough players&8\""
+  simulate_lobby_only: "&c/ctf simulate is only available in the lobby. Current state: &f%s&c."
+  game_not_running: "&cA game is not running!"
+  game_not_running_admin: "&cA game is not running! &eUse &c/ctf start &eto start CTF!"
+  join_locked: "&cCTF is cleaning up. Try again in a moment."
+  not_in_game: "&cYou must be in the CTF match to use this command."
+  build_blocked: "&cYou cannot build while playing CTF."
+  capture_own_flag: "&eYour flag is already home. Capture the enemy flag to score."
+
+player:
+  welcome: "&bWelcome to Capture The Flag! &7Type &c/ctf join &7to compete."
+  active_game_notice: "&bThere's an active game of Capture The Flag going on! &7Jump into the action! Type &c/ctf join"
+  joined: "&7Joined %s team."
+  left: "&7You left your CTF team."
+  debug_enabled: "&aCTF debug feed enabled."
+  debug_disabled: "&cCTF debug feed disabled."
+  score: "&7Red: %s | Blue: %s"
+
+kit:
+  selected: "&7Selected kit: &a%s"
+  required: "&cYou must select a kit before fighting."
+
+actionbar:
+  waiting: "&eWaiting for players... &f%s&7/&f%s"
+  flag_carrier: "&6You are the flag carrier!"
+  kit:
+    locked: "&cCan't change kits during match."
+  spear:
+    blocked: "&cCan't throw spear while carrying flag."
+    cooldown: "&cSpear cooldown: &f%ss"
+    cooldown_short: "&cCD: &f{seconds}s"
+    locked: "&eLocked: &b%s"
+    returning: "&cReturning: &f%ss"
+    hit: "&aHit: &f%s"
+    no_target: "&cNo enemy target in range."
+    thrown: "&aSpear thrown!"
+  scout:
+      ammo: "&bScout Tagger &7(%s/6) &aReady"
+      empty: "&bScout Tagger &7(0/6) &cEmpty"
+      cooldown: "&bScout Tagger &7(%s/6) &fRegen: %ss"
+      flag: "&cCan't throw while carrying flag"
+
+admin:
+  start:
+    success: "&aCTF countdown started."
+  stop:
+    success: "&cCTF stopped."
+  setflag:
+    success: "&7%s flag base set."
+  setlobby:
+    success: "&7Lobby spawn set."
+  setspawn:
+    success: "&7%s spawn set."
+  setreturn:
+    success: "&7Added a return point for %s."
+    duplicate: "&cA return point already exists here."
+  removereturn:
+    success: "&7Removed the nearest return point for %s."
+    none: "&cNo return point could be found in your current world."
+  setgametime:
+    success: "&7Match time set to &f%s&7 seconds."
+  setscore:
+    success: "&7%s score set to &f%s&7."
+    confirm: "&eThis will end the match if %s reaches &f%s&e (limit %s). Re-run with &cconfirm&e."
+  setscorelimit:
+    success: "&7Score limit set to &f%s&7."
+    confirm: "&eThis limit would end the match for %s. Re-run with &cconfirm&e."
+  canbuild:
+    enabled: "&aBuild bypass enabled."
+    disabled: "&cBuild bypass disabled."
+
+broadcast:
+  start: "&aCTF match started."
+  end_soon: "&eCTF ending soon!"
+  end_countdown: "&cMatch ends in &f%s&cs..."
+  waiting_for_players: "&eWaiting for &c{count} &emore player(s) to start."
+  countdown:
+    auto: "&aMatch begins soon... Prepare yourselves."
+    force: "&cAdmin force-started the match."
+    tick: "&eMatch starts in &c%s&e..."
+    cancelled: "&cCountdown cancelled: not enough players."
+  overtime:
+    start: "&4&lOVERTIME! &7Sudden Death: First to score wins."
+  lone_player:
+    start: "&eOnly one player remains. Match ends in &f%s&es unless another player joins."
+    tick: "&cMatch ends in &f%s&cs due to low player count."
+    cancelled: "&aPlayer count recovered. Match continues."
+  stop:
+    admin: "&cCTF stopped: Stopped by admin"
+    timeout: "&cCTF stopped: Time limit reached"
+    generic: "&cCTF stopped."
+  win: "&e%s wins!"
+  match_ready: "&aA new game of CTF is ready! &7Type &c/ctf join &7to compete."
+  death: "&7{player} &cdied."
+  kill: "&e{killer} &7killed &c{victim}&7."
+  flag_carrier_killed: "&e{killer} &7stopped the flag carrier &c{victim}&7!"
+  flag:
+    pickup: "&e%s &7picked up the %s flag."
+    drop: "&e%s &7dropped the %s flag."
+    return: "&e%s &7returned the %s flag."
+    return_own: "&e%s &7returned your %s flag."
+    return_enemy: "&e%s &7returned the %s flag."
+    capture: "&e%s &7captured the %s flag for %s."
+  server_join: "&7%s joined the server."
+  server_quit: "&7{player} left the server."
+  team_join: "&7%s joined %s team."
+  team_leave: "&7%s left %s team."
+  team_leave_unknown: "&7%s left their team."
+  match_quit: "&7{player} left the CTF match."
+
+help:
+  welcome: "&bCTF Commands:"
+  player:
+    join: "&7/ctf join <red|blue> &8- &fJoin a team"
+    leave: "&7/ctf leave &8- &fLeave your team"
+    score: "&7/ctf score &8- &fView the score"
+  admin:
+    setflag: "&c/ctf setflag <red|blue> &8- &fSet team flag base"
+    setlobby: "&c/ctf setlobby &8- &fSet CTF lobby spawn"
+    setspawn: "&c/ctf setspawn <red|blue> &8- &fSet team spawn point"
+    setreturn: "&c/ctf setreturn <red|blue> &8- &fAdd return capture point"
+    removereturn: "&c/ctf removereturn &8- &fRemove the nearest return capture point"
+    setgametime: "&c/ctf setgametime <seconds> &8- &fSet match clock time"
+    setscore: "&c/ctf setscore <red|blue> <score> &8- &fSet team score"
+    setscorelimit: "&c/ctf setscorelimit <limit> &8- &fSet winning score limit"
+    canbuild: "&c/ctf canbuild &8- &fToggle lobby build/inventory bypass"
+    start: "&c/ctf start &8- &fStart the match countdown"
+    stop: "&c/ctf stop &8- &fStop the match"
+    debug: "&c/ctf debug &8- &fToggle in-game debug feed"
+    simulate: "&c/ctf simulate [mode] &8- &fStart an allowlisted local bot simulation"
+
+scoreboard:
+  header: "&f%s"
+  header_lobby: "&eLobby"
+  header_overtime: "&4&lOT &f%s"
+  line:
+    first_to_win: "&fFirst to &6%s &fWins!"
+    red: "&cRed: &f%s"
+    blue: "&9Blue: &f%s"
+    red_players: "&cRed Players: &f%s"
+    blue_players: "&9Blue Players: &f%s"
+    team: "&fTeam: {team}"
+
+bossbar:
+  waiting: "&eWaiting for players: &f%s&7/&f%s"
+  flag_carrier: "&aReturn to base &7[%s] &f%sm"
+  flag_return: "&eYour flag is down! &7[%s] &f%sm"
+  kill: "&aYou have killed &f%s&a!"
+
+title:
+  flag:
+    taken:
+      header: "&c&lYOUR FLAG WAS TAKEN!"
+      sub: "&7Stop &f%s &7before they score."
+  score:
+    header: "&6%s scored for %s!"
+    sub: "&e%s Team scores!"
