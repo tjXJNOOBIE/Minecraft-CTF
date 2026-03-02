@@ -1,0 +1,44 @@
+lobby-spawn:
+  world: "CTFMap"
+  x: 200.5
+  y: 200.0
+  z: 235.5
+  yaw: 0.0
+  pitch: 0.0
+
+team-spawns:
+  red:
+    world: "CTFMap"
+    x: 192.5
+    y: 190.0
+    z: 200.5
+    yaw: 0.0
+    pitch: 0.0
+  blue:
+    world: "CTFMap"
+    x: 208.5
+    y: 190.0
+    z: 200.5
+    yaw: 0.0
+    pitch: 0.0
+
+return-points:
+  red:
+    "0":
+      world: "CTFMap"
+      x: 190.5
+      y: 190.0
+      z: 202.5
+      yaw: 0.0
+      pitch: 0.0
+  blue:
+    "0":
+      world: "CTFMap"
+      x: 210.5
+      y: 190.0
+      z: 202.5
+      yaw: 0.0
+      pitch: 0.0
+
+capture-zone:
+  radius: 3.0
