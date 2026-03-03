@@ -1,0 +1,53 @@
+﻿<svg viewBox="0 0 980 420" xmlns="http://www.w3.org/2000/svg">
+  <rect width="980" height="420" fill="#0d1117" />
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#58a6ff" />
+    </marker>
+  </defs>
+
+  <text x="490" y="40" fill="#ffffff" font-family="monospace" font-size="22" text-anchor="middle" font-weight="bold">FLAG CAPTURE FLOW</text>
+  <text x="490" y="60" fill="#8b949e" font-family="monospace" font-size="12" text-anchor="middle">CTFFlagInteractEvent + FlagManager + FlagCaptureHandler</text>
+
+  <rect x="40" y="120" width="160" height="180" rx="6" fill="#161b22" stroke="#d29922" stroke-width="2"/>
+  <text x="120" y="150" fill="#e3b341" font-family="monospace" font-size="13" text-anchor="middle" font-weight="bold">1. TOUCH FLAG</text>
+  <text x="120" y="176" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">player hits block</text>
+  <text x="120" y="194" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">team + state check</text>
+  <text x="120" y="224" fill="#8b949e" font-family="monospace" font-size="10" text-anchor="middle">own dropped flag?</text>
+  <text x="120" y="242" fill="#8b949e" font-family="monospace" font-size="10" text-anchor="middle">enemy flag pickup?</text>
+
+  <rect x="250" y="90" width="190" height="95" rx="6" fill="#2ea043" fill-opacity="0.15" stroke="#2ea043" stroke-width="2"/>
+  <text x="345" y="120" fill="#2ea043" font-family="monospace" font-size="13" text-anchor="middle" font-weight="bold">2A. PICKUP ENEMY</text>
+  <text x="345" y="143" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">state -> CARRIED</text>
+  <text x="345" y="161" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">carrier item + effects</text>
+
+  <rect x="250" y="215" width="190" height="95" rx="6" fill="#58a6ff" fill-opacity="0.15" stroke="#58a6ff" stroke-width="2"/>
+  <text x="345" y="245" fill="#58a6ff" font-family="monospace" font-size="13" text-anchor="middle" font-weight="bold">2B. RETURN OWN</text>
+  <text x="345" y="268" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">if own flag DROPPED</text>
+  <text x="345" y="286" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">state -> AT_BASE</text>
+
+  <rect x="490" y="120" width="190" height="180" rx="6" fill="#1f6feb" fill-opacity="0.15" stroke="#1f6feb" stroke-width="2"/>
+  <text x="585" y="150" fill="#58a6ff" font-family="monospace" font-size="13" text-anchor="middle" font-weight="bold">3. MOVE CHECK</text>
+  <text x="585" y="176" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">carrier enters return zone</text>
+  <text x="585" y="194" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">own flag must be AT_BASE</text>
+  <text x="585" y="222" fill="#8b949e" font-family="monospace" font-size="10" text-anchor="middle">CTFCaptureZoneService</text>
+  <text x="585" y="240" fill="#8b949e" font-family="monospace" font-size="10" text-anchor="middle">isInsideCaptureZone(...)</text>
+
+  <rect x="730" y="120" width="210" height="180" rx="6" fill="#f78166" fill-opacity="0.15" stroke="#f78166" stroke-width="2"/>
+  <text x="835" y="150" fill="#ff7b72" font-family="monospace" font-size="13" text-anchor="middle" font-weight="bold">4. CAPTURE RESULT</text>
+  <text x="835" y="176" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">FlagCaptureHandler.capture</text>
+  <text x="835" y="194" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">score++ / win check</text>
+  <text x="835" y="212" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">broadcast + title + sound</text>
+  <text x="835" y="230" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">fireworks + bossbar update</text>
+  <text x="835" y="260" fill="#8b949e" font-family="monospace" font-size="10" text-anchor="middle">stop(WIN) or continue</text>
+
+  <line x1="200" y1="160" x2="250" y2="138" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="200" y1="255" x2="250" y2="262" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="440" y1="138" x2="490" y2="190" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="680" y1="210" x2="730" y2="210" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="250" y="330" width="690" height="60" rx="6" fill="#161b22" stroke="#8b949e" stroke-width="1" stroke-dasharray="5,4"/>
+  <text x="595" y="355" fill="#8b949e" font-family="monospace" font-size="11" text-anchor="middle" font-weight="bold">Failure Paths</text>
+  <text x="595" y="374" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">Invalid touch, own flag not at base, or player leaves/death -> dropFlagIfCarrier + indicator sync + no score.</text>
+</svg>
