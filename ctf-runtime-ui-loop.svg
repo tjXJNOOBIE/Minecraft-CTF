@@ -1,0 +1,53 @@
+﻿<svg viewBox="0 0 980 460" xmlns="http://www.w3.org/2000/svg">
+  <rect width="980" height="460" fill="#0d1117" />
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#58a6ff" />
+    </marker>
+  </defs>
+
+  <text x="490" y="40" fill="#ffffff" font-family="monospace" font-size="22" text-anchor="middle" font-weight="bold">RUNTIME UI UPDATE LOOP</text>
+  <text x="490" y="60" fill="#8b949e" font-family="monospace" font-size="12" text-anchor="middle">ScoreBoardManager + BossBarManager + Flag indicators during active match</text>
+
+  <rect x="60" y="120" width="190" height="210" rx="6" fill="#161b22" stroke="#d29922" stroke-width="2"/>
+  <text x="155" y="150" fill="#e3b341" font-family="monospace" font-size="13" text-anchor="middle" font-weight="bold">TRIGGER SOURCES</text>
+  <text x="155" y="178" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">GameLoop tick callbacks</text>
+  <text x="155" y="196" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">Flag state transitions</text>
+  <text x="155" y="214" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">join/leave/respawn events</text>
+  <text x="155" y="232" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">score/time mutations</text>
+
+  <rect x="300" y="95" width="230" height="110" rx="6" fill="#1f6feb" fill-opacity="0.15" stroke="#58a6ff" stroke-width="2"/>
+  <text x="415" y="126" fill="#58a6ff" font-family="monospace" font-size="13" text-anchor="middle" font-weight="bold">ScoreBoardManager</text>
+  <text x="415" y="150" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">set score limit / team scores</text>
+  <text x="415" y="168" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">updateScoreboards(time,state)</text>
+
+  <rect x="300" y="220" width="230" height="110" rx="6" fill="#238636" fill-opacity="0.15" stroke="#238636" stroke-width="2"/>
+  <text x="415" y="251" fill="#2ea043" font-family="monospace" font-size="13" text-anchor="middle" font-weight="bold">FlagManager</text>
+  <text x="415" y="275" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">startBossBarTask()</text>
+  <text x="415" y="293" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">updateBossBars() + indicators</text>
+
+  <rect x="580" y="95" width="160" height="110" rx="6" fill="#58a6ff" fill-opacity="0.15" stroke="#58a6ff" stroke-width="2"/>
+  <text x="660" y="126" fill="#58a6ff" font-family="monospace" font-size="12" text-anchor="middle" font-weight="bold">Scoreboard UI</text>
+  <text x="660" y="150" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">scores + timer</text>
+  <text x="660" y="168" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">per-player view</text>
+
+  <rect x="580" y="220" width="160" height="110" rx="6" fill="#2ea043" fill-opacity="0.15" stroke="#2ea043" stroke-width="2"/>
+  <text x="660" y="251" fill="#2ea043" font-family="monospace" font-size="12" text-anchor="middle" font-weight="bold">Bossbar + FX</text>
+  <text x="660" y="275" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">flag distance bars</text>
+  <text x="660" y="293" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">zone particles/glow</text>
+
+  <rect x="790" y="120" width="140" height="210" rx="6" fill="#f78166" fill-opacity="0.15" stroke="#f78166" stroke-width="2"/>
+  <text x="860" y="150" fill="#ff7b72" font-family="monospace" font-size="12" text-anchor="middle" font-weight="bold">PLAYER FEEDBACK</text>
+  <text x="860" y="178" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">situational awareness</text>
+  <text x="860" y="196" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">capture pressure</text>
+  <text x="860" y="214" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">time-to-win clarity</text>
+
+  <line x1="250" y1="170" x2="300" y2="150" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="250" y1="260" x2="300" y2="275" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="530" y1="150" x2="580" y2="150" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="530" y1="275" x2="580" y2="275" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="740" y1="150" x2="790" y2="170" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="740" y1="275" x2="790" y2="250" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="490" y="410" fill="#8b949e" font-family="monospace" font-size="11" text-anchor="middle">UI services are event-driven and timer-driven, but always reflect current state from orchestrator-owned sources.</text>
+</svg>
