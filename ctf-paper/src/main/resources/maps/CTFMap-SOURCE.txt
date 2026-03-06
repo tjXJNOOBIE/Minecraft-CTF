@@ -1,0 +1,5 @@
+Source: https://github.com/IJOMinecraft/CTFVillage
+Archive URL: https://api.github.com/repos/IJOMinecraft/CTFVillage/zipball
+Retrieved: 2026-03-06
+World Folder Used: IJO CTF VILLAGE
+Packaged As: CTFMap (maps/ctf-map.zip)
