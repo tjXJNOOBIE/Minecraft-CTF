@@ -1,0 +1,55 @@
+<svg viewBox="0 0 820 320" xmlns="http://www.w3.org/2000/svg">
+  <rect width="820" height="300" fill="#0d1117"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8b949e"/>
+    </marker>
+  </defs>
+
+  <text x="410" y="34" fill="#ffffff" font-family="monospace" font-size="20" text-anchor="middle" font-weight="bold">MINECRAFT CTF MATCH OVERVIEW</text>
+  <text x="410" y="56" fill="#8b949e" font-family="monospace" font-size="11" text-anchor="middle">Lobby state, team balancing, flag pressure, capture gating, and overtime</text>
+
+  <rect x="28" y="88" width="136" height="160" rx="4" fill="#161b22" stroke="#d29922" stroke-width="2"/>
+  <text x="96" y="116" fill="#e3b341" font-family="monospace" font-size="14" text-anchor="middle" font-weight="bold">LOBBY</text>
+  <text x="96" y="146" fill="#c9d1d9" font-family="monospace" font-size="11" text-anchor="middle">BossBar waiting</text>
+  <text x="96" y="166" fill="#c9d1d9" font-family="monospace" font-size="11" text-anchor="middle">Auto countdown</text>
+  <text x="96" y="186" fill="#c9d1d9" font-family="monospace" font-size="11" text-anchor="middle">Arena not active</text>
+  <rect x="48" y="204" width="96" height="24" rx="3" fill="#d29922" fill-opacity="0.18" stroke="#d29922" stroke-width="1"/>
+  <text x="96" y="220" fill="#e3b341" font-family="monospace" font-size="10" text-anchor="middle">/ctf join</text>
+
+  <line x1="164" y1="162" x2="216" y2="162" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="216" y="88" width="156" height="160" rx="4" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+  <text x="294" y="116" fill="#58a6ff" font-family="monospace" font-size="14" text-anchor="middle" font-weight="bold">TEAM ASSIGNMENT</text>
+  <text x="294" y="146" fill="#c9d1d9" font-family="monospace" font-size="11" text-anchor="middle">Requested team key</text>
+  <text x="294" y="166" fill="#c9d1d9" font-family="monospace" font-size="11" text-anchor="middle">Balanced fallback</text>
+  <text x="294" y="184" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">Running match</text>
+  <text x="294" y="198" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">rebalance</text>
+  <rect x="236" y="212" width="52" height="22" rx="3" fill="#7ee787" fill-opacity="0.14" stroke="#238636" stroke-width="1"/>
+  <text x="262" y="227" fill="#7ee787" font-family="monospace" font-size="10" text-anchor="middle">RED</text>
+  <rect x="300" y="212" width="52" height="22" rx="3" fill="#79c0ff" fill-opacity="0.14" stroke="#1f6feb" stroke-width="1"/>
+  <text x="326" y="227" fill="#79c0ff" font-family="monospace" font-size="10" text-anchor="middle">BLUE</text>
+
+  <line x1="372" y1="162" x2="430" y2="162" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="430" y="88" width="176" height="160" rx="4" fill="#161b22" stroke="#ff7b72" stroke-width="2"/>
+  <text x="518" y="116" fill="#ff7b72" font-family="monospace" font-size="14" text-anchor="middle" font-weight="bold">FLAG PRESSURE</text>
+  <text x="518" y="146" fill="#c9d1d9" font-family="monospace" font-size="11" text-anchor="middle">Steal enemy flag</text>
+  <text x="518" y="166" fill="#c9d1d9" font-family="monospace" font-size="11" text-anchor="middle">Protect own base</text>
+  <text x="518" y="186" fill="#c9d1d9" font-family="monospace" font-size="11" text-anchor="middle">Dropped flag routing</text>
+  <rect x="452" y="202" width="132" height="32" rx="3" fill="#4c0519" stroke="#ff7b72" stroke-width="1"/>
+  <text x="518" y="216" fill="#ffa198" font-family="monospace" font-size="9" text-anchor="middle">OWN FLAG MUST</text>
+  <text x="518" y="228" fill="#ffa198" font-family="monospace" font-size="9" text-anchor="middle">BE HOME</text>
+
+  <line x1="606" y1="162" x2="660" y2="162" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="660" y="88" width="132" height="160" rx="4" fill="#161b22" stroke="#238636" stroke-width="2"/>
+  <text x="726" y="116" fill="#2ea043" font-family="monospace" font-size="14" text-anchor="middle" font-weight="bold">RESULT</text>
+  <text x="726" y="146" fill="#c9d1d9" font-family="monospace" font-size="11" text-anchor="middle">Scoreboard update</text>
+  <text x="726" y="166" fill="#c9d1d9" font-family="monospace" font-size="11" text-anchor="middle">Match stop / win</text>
+  <text x="726" y="186" fill="#c9d1d9" font-family="monospace" font-size="11" text-anchor="middle">Overtime if tied</text>
+  <rect x="690" y="204" width="72" height="22" rx="3" fill="#238636" fill-opacity="0.16" stroke="#238636" stroke-width="1"/>
+  <text x="726" y="219" fill="#7ee787" font-family="monospace" font-size="10" text-anchor="middle">NEXT POINT</text>
+
+  <text x="410" y="294" fill="#8b949e" font-family="monospace" font-size="11" text-anchor="middle">The match only scores when the carrier reaches base and their own flag has already been returned.</text>
+</svg>
