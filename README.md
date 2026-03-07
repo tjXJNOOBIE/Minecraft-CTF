@@ -6,7 +6,7 @@ A simple and straightforward 'Capture The Flag' minigame plugin. Built to fulfil
 
 ### Prerequisites
 
-- Java 25
+- Java 21
 - Gradle(optional)
 
 ### Build Steps / Setup
@@ -19,7 +19,7 @@ cd Minecraft-CTF
 
 #### Run
 
-1. After building, the compiled artifact/jar will be located in `build/out/`. Drop the jar into your PaperMC plugins folder and start the server.
+1. After building, the compiled artifact/jar will be located in `ctf-paper/build/libs/`. Drop the jar into your PaperMC plugins folder and start the server.
 2. You should load into the world and can do `/ctf join` to join a match. If not, follow admin commands to setup the arena and lobby.
 
 <p align="center">
@@ -81,16 +81,13 @@ Bot actions include, but are not limited to:
 
 Project employs integration/unit and full game simulation(s) written in JUnit 5.
 
-- Test can be found in: '/src/test/'
+- Tests can be found in: `ctf-paper/src/test/`
 - Full Game Simulation Test class: 'FullPluginSimulationTest.java' / 'CTFGameSimulationTest.java'
 
 ```bash
-  ./gradlew test --tests "FullPlayerSimulationTest" --info
-  ./gradlew test --tests "CTFGameSimulation" --info
+  ./gradlew test --tests "*FullPluginSimulationTest" --info
+  ./gradlew test --tests "*CTFGameSimulationTest" --info
 ```
-
-- **SEE**: '/tools' folder for runnable scripts. (Run with npm)
-  - These scripts can: _simulate full games, edge case, build arenas, setup arena, run commands, read UI, and more. Best scripts are ones written in TypeScript._
 
 --
 
