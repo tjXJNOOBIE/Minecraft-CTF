@@ -6,7 +6,7 @@ A simple and straightforward 'Capture The Flag' minigame plugin. Built to fulfil
 
 ### Prerequisites
 
-- Java 21
+- Java 25
 - Gradle(optional)
 
 ### Build Steps / Setup
