@@ -15,6 +15,8 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.12.1")
     testImplementation("org.mockito:mockito-junit-jupiter:5.16.1")
     testImplementation("org.mockito:mockito-inline:5.2.0")
+    testImplementation("net.bytebuddy:byte-buddy:1.17.5")
+    testRuntimeOnly("net.bytebuddy:byte-buddy-agent:1.17.5")
 }
 
 sourceSets {
@@ -36,13 +38,13 @@ configurations.named("serviceLoaderTestRuntimeOnly") {
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(21))
+        languageVersion.set(JavaLanguageVersion.of(25))
     }
 }
 
 tasks.withType<JavaCompile>().configureEach {
     options.encoding = "UTF-8"
-    options.release.set(21)
+    options.release.set(25)
 }
 
 tasks.test {
