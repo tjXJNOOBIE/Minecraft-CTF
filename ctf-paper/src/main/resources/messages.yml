@@ -29,6 +29,8 @@ error:
   game_not_running: "&cA game is not running!"
   game_not_running_admin: "&cA game is not running! &eUse &c/ctf start &eto start CTF!"
   join_locked: "&cCTF is cleaning up. Try again in a moment."
+  join_setup_incomplete: "&cYou cannot join CTF until setup is complete. Missing: &f{missing}&c."
+  start_setup_incomplete: "&cYou cannot start CTF until setup is complete. Missing: &f{missing}&c."
   not_in_game: "&cYou must be in the CTF match to use this command."
   build_blocked: "&cYou cannot build while playing CTF."
   capture_own_flag: "&eYour flag is already home. Capture the enemy flag to score."

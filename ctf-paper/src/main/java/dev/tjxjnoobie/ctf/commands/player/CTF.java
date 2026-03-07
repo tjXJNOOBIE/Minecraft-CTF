@@ -185,7 +185,7 @@ public final class CTF implements CommandExecutor, TabCompleter, MessageAccess, 
 
         boolean hasPermission2 = sender.hasPermission(DEBUG_PERMISSION); // Debug help.
         if (hasPermission2) {
-            sendHelpLine(sender, "help.player.debug");
+            sendHelpLine(sender, "help.admin.debug");
         }
 
         boolean hasPermission3 = sender.hasPermission(SIMULATE_PERMISSION); // Simulation help.

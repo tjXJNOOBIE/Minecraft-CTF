@@ -18,6 +18,7 @@ import dev.tjxjnoobie.ctf.kit.KitSelectionHandler;
 import dev.tjxjnoobie.ctf.scoreboard.ScoreBoardManager;
 import dev.tjxjnoobie.ctf.team.TeamId;
 import dev.tjxjnoobie.ctf.team.TeamManager;
+import dev.tjxjnoobie.ctf.util.game.ArenaSetupGuardUtil;
 import java.time.Duration;
 import java.util.List;
 import net.kyori.adventure.text.Component;
@@ -59,6 +60,7 @@ public final class MatchFlowHandler implements MessageAccess, DependencyAccess, 
                     && !getGameStateManager().isCleanupInProgress()
                     && flagBaseSetupHandler != null
                     && flagBaseSetupHandler.areBasesReady()
+                    && ArenaSetupGuardUtil.isArenaConfigured()
                     && (force || hasMinimumArenaPlayers());
             },
             this::processMatchStartCountdownTick,
@@ -90,6 +92,9 @@ public final class MatchFlowHandler implements MessageAccess, DependencyAccess, 
         boolean conditionResult10 = flagBaseSetupHandler == null || !flagBaseSetupHandler.areBasesReady() || flagLifecycleHandler == null;
         // Guard: short-circuit when flagBaseSetupHandler == null || !flagBaseSetupHandler.areBasesReady() || flagLifecycleHandler == null.
         if (conditionResult10) {
+            return;
+        }
+        if (!ArenaSetupGuardUtil.isArenaConfigured()) {
             return;
         }
 
@@ -211,6 +216,9 @@ public final class MatchFlowHandler implements MessageAccess, DependencyAccess, 
             || getGameStateManager().getGameState() != GameState.LOBBY
             || flagBaseSetupHandler == null
             || !flagBaseSetupHandler.areBasesReady()) {
+            return false;
+        }
+        if (!ArenaSetupGuardUtil.isArenaConfigured()) {
             return false;
         }
         boolean conditionResult4 = getTeamManager().getJoinedPlayerCount() <= 0;

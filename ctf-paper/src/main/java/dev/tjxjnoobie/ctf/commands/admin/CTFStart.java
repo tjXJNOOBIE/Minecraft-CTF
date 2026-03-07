@@ -5,7 +5,9 @@ import dev.tjxjnoobie.ctf.commands.util.CommandSenderUtil;
 import dev.tjxjnoobie.ctf.config.message.interfaces.MessageAccess;
 import dev.tjxjnoobie.ctf.dependency.interfaces.LifecycleDependencyAccess;
 import dev.tjxjnoobie.ctf.game.lifecycle.handlers.MatchFlowHandler;
+import dev.tjxjnoobie.ctf.util.game.ArenaSetupGuardUtil;
 import dev.tjxjnoobie.ctf.util.bukkit.message.BukkitMessageSender;
+import java.util.Map;
 import net.kyori.adventure.text.Component;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -42,6 +44,13 @@ public final class CTFStart implements CommandExecutor, MessageAccess, BukkitMes
 
         if (args.length != 0) {
             Component message = getMessage("error.usage.ctf_start");
+            sender.sendMessage(message);
+            return true;
+        }
+
+        String missingSetup = ArenaSetupGuardUtil.describeMissingArenaSetup();
+        if (!missingSetup.isBlank()) {
+            Component message = getMessage("error.start_setup_incomplete", Map.of("missing", missingSetup));
             sender.sendMessage(message);
             return true;
         }

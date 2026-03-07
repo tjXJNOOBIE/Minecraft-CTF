@@ -3,9 +3,11 @@ package dev.tjxjnoobie.ctf.commands.player;
 import dev.tjxjnoobie.ctf.commands.util.CommandSenderUtil;
 import dev.tjxjnoobie.ctf.commands.util.TeamTabCompleteUtil;
 import dev.tjxjnoobie.ctf.config.message.interfaces.MessageAccess;
+import dev.tjxjnoobie.ctf.util.game.ArenaSetupGuardUtil;
 import dev.tjxjnoobie.ctf.util.bukkit.message.BukkitMessageSender;
 
 import java.util.List;
+import java.util.Map;
 import net.kyori.adventure.text.Component;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -34,6 +36,13 @@ public final class CTFJoin implements CommandExecutor, TabCompleter, MessageAcce
         // Guard: Match cleanup is in progress, so team joins are temporarily locked.
         if (cleanupInProgress) {
             Component message = getMessage("error.join_locked");
+            sendMessage(player, message);
+            return true;
+        }
+
+        String missingSetup = ArenaSetupGuardUtil.describeMissingArenaSetup();
+        if (!missingSetup.isBlank()) {
+            Component message = getMessage("error.join_setup_incomplete", Map.of("missing", missingSetup));
             sendMessage(player, message);
             return true;
         }

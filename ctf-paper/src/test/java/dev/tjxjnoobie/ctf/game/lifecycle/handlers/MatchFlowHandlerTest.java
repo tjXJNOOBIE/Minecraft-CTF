@@ -16,11 +16,14 @@ import dev.tjxjnoobie.ctf.kit.KitSelectionHandler;
 import dev.tjxjnoobie.ctf.kit.KitSelectorGUI;
 import dev.tjxjnoobie.ctf.kit.tags.KitType;
 import dev.tjxjnoobie.ctf.scoreboard.ScoreBoardManager;
+import dev.tjxjnoobie.ctf.team.TeamId;
 import dev.tjxjnoobie.ctf.team.TeamManager;
 import dev.tjxjnoobie.ctf.util.bukkit.message.BukkitMessageUtil;
 import java.lang.reflect.Method;
 import java.time.Duration;
 import java.util.List;
+import java.util.Optional;
+import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -73,6 +76,13 @@ class MatchFlowHandlerTest extends TestLogSupport {
         gameStateManager.setGameState(GameState.LOBBY);
         gameStateManager.setForcedCountdown(true);
         when(flagBaseSetupHandler.areBasesReady()).thenReturn(true);
+        when(teamManager.getLobbySpawn()).thenReturn(Optional.of(Mockito.mock(Location.class)));
+        when(teamManager.getSpawn(TeamId.RED)).thenReturn(Optional.of(Mockito.mock(Location.class)));
+        when(teamManager.getSpawn(TeamId.BLUE)).thenReturn(Optional.of(Mockito.mock(Location.class)));
+        when(teamManager.getReturnPoints(TeamId.RED)).thenReturn(List.of(Mockito.mock(Location.class)));
+        when(teamManager.getReturnPoints(TeamId.BLUE)).thenReturn(List.of(Mockito.mock(Location.class)));
+        when(flagBaseSetupHandler.getBaseLocation(TeamId.RED)).thenReturn(Mockito.mock(Location.class));
+        when(flagBaseSetupHandler.getBaseLocation(TeamId.BLUE)).thenReturn(Mockito.mock(Location.class));
     }
 
     @Test
