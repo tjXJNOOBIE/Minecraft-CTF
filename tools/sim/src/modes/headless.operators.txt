@@ -1,0 +1,13 @@
+# Default /ctf simulate roster for headless mode (12 bots total).
+SimDirector
+SimRed01
+SimRed02
+SimRed03
+SimRed04
+SimRed05
+SimBlue01
+SimBlue02
+SimBlue03
+SimBlue04
+SimBlue05
+SimBlue06

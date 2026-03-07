@@ -1,0 +1,37 @@
+{
+  "name": "minecraft-ctf",
+  "version": "1.0.0",
+  "description": "```\r ./gradlew :paper:build\r ```",
+  "main": "bot-testing/src/ctf-break-test.ts",
+  "scripts": {
+    "dev": "tsx watch bot-testing/src/ctf-test.ts",
+    "headless": "tsx bot-testing/src/run-headless.ts",
+    "headless:stable": "tsx bot-testing/src/run-headless-stable.ts",
+    "headless:longhaul": "tsx bot-testing/src/ctf-sim-longhaul.ts",
+    "simulate": "tsx bot-testing/src/ctf-simulate-local.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjXJNOOBIE/Minecraft-CTF.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tjXJNOOBIE/Minecraft-CTF/issues"
+  },
+  "homepage": "https://github.com/tjXJNOOBIE/Minecraft-CTF#readme",
+  "dependencies": {
+    "mineflayer": "^4.35.0",
+    "mineflayer-pathfinder": "^2.4.5",
+    "prismarine-viewer": "^1.33.0",
+    "rg": "^0.0.2",
+    "vec3": "^0.1.10"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}

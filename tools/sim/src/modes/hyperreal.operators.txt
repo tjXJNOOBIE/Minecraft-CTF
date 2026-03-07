@@ -1,0 +1,14 @@
+# Default /ctf simulate roster for hyperreal mode (12 roster bots + organizer).
+SimDirector
+SimRed01
+SimRed02
+SimRed03
+SimRed04
+SimRed05
+SimRed06
+SimBlue01
+SimBlue02
+SimBlue03
+SimBlue04
+SimBlue05
+SimBlue06

@@ -1,0 +1,25 @@
+# Legacy full mode organizer and bot roster.
+RedLeader
+RedTwo
+RedThree
+RedFour
+RedFive
+RedSix
+RedSeven
+RedEight
+RedNine
+RedTen
+RedEleven
+RedTwelve
+BlueLeader
+BlueTwo
+BlueThree
+BlueFour
+BlueFive
+BlueSix
+BlueSeven
+BlueEight
+BlueNine
+BlueTen
+BlueEleven
+BlueTwelve
