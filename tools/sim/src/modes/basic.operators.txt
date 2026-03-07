@@ -1,0 +1,7 @@
+# Legacy basic mode organizer and bot roster.
+RedLeader
+RedOne
+RedTwo
+BlueLeader
+BlueOne
+BlueTwo

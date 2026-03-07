@@ -1,0 +1,239 @@
+2026-03-06T14:55:16.408Z [sim:hyper-real-default] [info] config host=127.0.0.1 port=25565 bots=12 arenaSize=75 seed=demo-seed viewer=off
+2026-03-06T14:55:19.655Z [sim:hyper-real-default/worldedit] [info] WorldEdit not detected; using manual block placement
+2026-03-06T14:55:19.663Z [sim:hyper-real-default/scout] [info] scouted build site center=-7,124,-13 size=75 score=539
+2026-03-06T14:55:19.667Z [sim:hyper-real-default/build] [info] building arena size=75 detail=high
+2026-03-06T15:02:42.385Z [sim:hyper-real-default/build] [info] arena build done usedWorldEdit=no trackedBlocks=8664
+2026-03-06T15:02:42.391Z [sim:hyper-real-default/setup] [info] setting CTF points
+2026-03-06T15:02:46.090Z [sim:hyper-real-default/setup] [info] CTF points configured
+Error: write ECONNRESET
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Framer.ondata (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:707:22)
+    at Framer.emit (node:events:519:28)
+    at addChunk (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:323:12) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'write'
+}
+Error: write ECONNRESET
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Framer.ondata (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:707:22)
+    at Framer.emit (node:events:519:28)
+    at addChunk (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:323:12) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'write'
+}
+Error: write ECONNRESET
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Framer.ondata (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:707:22)
+    at Framer.emit (node:events:519:28)
+    at addChunk (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:323:12) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'write'
+}
+Error: write ECONNRESET
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Framer.ondata (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:707:22)
+    at Framer.emit (node:events:519:28)
+    at addChunk (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:323:12) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'write'
+}
+Error: write ECONNRESET
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Framer.ondata (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:707:22)
+    at Framer.emit (node:events:519:28)
+    at addChunk (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:323:12) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'write'
+}
+Error: write ECONNRESET
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Framer.ondata (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:707:22)
+    at Framer.emit (node:events:519:28)
+    at addChunk (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:323:12) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'write'
+}
+Error: write ECONNRESET
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Framer.ondata (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:707:22)
+    at Framer.emit (node:events:519:28)
+    at addChunk (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:323:12) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'write'
+}
+Error: write ECONNRESET
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Framer.ondata (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:707:22)
+    at Framer.emit (node:events:519:28)
+    at addChunk (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:323:12) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'write'
+}
+Error: write ECONNRESET
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Framer.ondata (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:707:22)
+    at Framer.emit (node:events:519:28)
+    at addChunk (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:323:12) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'write'
+}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+Error: write ECONNRESET
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Framer.ondata (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:707:22)
+    at Framer.emit (node:events:519:28)
+    at addChunk (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:323:12) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'write'
+}
+Error: write ECONNRESET
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Framer.ondata (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:707:22)
+    at Framer.emit (node:events:519:28)
+    at addChunk (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:323:12) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'write'
+}
+Error: write ECONNRESET
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at Framer.ondata (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:707:22)
+    at Framer.emit (node:events:519:28)
+    at addChunk (F:\workspace\Minecraft-CTF\node_modules\readable-stream\lib\internal\streams\readable.js:323:12) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'write'
+}
+Error: client timed out after 60000 milliseconds
+    at Timeout._onTimeout (F:\workspace\Minecraft-CTF\node_modules\minecraft-protocol\src\client\keepalive.js:18:28)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+Error: client timed out after 60000 milliseconds
+    at Timeout._onTimeout (F:\workspace\Minecraft-CTF\node_modules\minecraft-protocol\src\client\keepalive.js:18:28)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+Error: client timed out after 60000 milliseconds
+    at Timeout._onTimeout (F:\workspace\Minecraft-CTF\node_modules\minecraft-protocol\src\client\keepalive.js:18:28)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+Error: client timed out after 60000 milliseconds
+    at Timeout._onTimeout (F:\workspace\Minecraft-CTF\node_modules\minecraft-protocol\src\client\keepalive.js:18:28)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+Error: client timed out after 60000 milliseconds
+    at Timeout._onTimeout (F:\workspace\Minecraft-CTF\node_modules\minecraft-protocol\src\client\keepalive.js:18:28)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+Error: client timed out after 60000 milliseconds
+    at Timeout._onTimeout (F:\workspace\Minecraft-CTF\node_modules\minecraft-protocol\src\client\keepalive.js:18:28)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+Error: client timed out after 60000 milliseconds
+    at Timeout._onTimeout (F:\workspace\Minecraft-CTF\node_modules\minecraft-protocol\src\client\keepalive.js:18:28)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+Error: client timed out after 60000 milliseconds
+    at Timeout._onTimeout (F:\workspace\Minecraft-CTF\node_modules\minecraft-protocol\src\client\keepalive.js:18:28)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+Error: client timed out after 60000 milliseconds
+    at Timeout._onTimeout (F:\workspace\Minecraft-CTF\node_modules\minecraft-protocol\src\client\keepalive.js:18:28)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+Error: client timed out after 60000 milliseconds
+    at Timeout._onTimeout (F:\workspace\Minecraft-CTF\node_modules\minecraft-protocol\src\client\keepalive.js:18:28)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+2026-03-06T15:05:56.429Z [sim:hyper-real-default] [info] entering overtime
+2026-03-06T15:08:00.360Z [sim:hyper-real-default] [info] simulation complete scoreModel red=0 blue=0 events=112
+2026-03-06T15:08:00.361Z [sim:hyper-real-default] [info] cleanup start (finally)
+2026-03-06T15:08:00.361Z [sim:hyper-real-default] [info] cleanup reason=finally
+2026-03-06T15:08:00.485Z [sim:hyper-real-default/teardown] [info] manual teardown using tracked placements (8664 blocks)
+2026-03-06T15:25:47.253Z [sim:hyper-real-default] [info] cleanup complete (finally)

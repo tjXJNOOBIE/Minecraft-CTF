@@ -1,0 +1,23 @@
+2026-03-06T15:03:27.722Z [sim:hyper-real-default/spawn] [warn] SimRed01 error write ECONNRESET
+2026-03-06T15:03:31.125Z [sim:hyper-real-default/spawn] [warn] SimBlue01 error write ECONNRESET
+2026-03-06T15:03:32.577Z [sim:hyper-real-default/spawn] [warn] SimRed03 error write ECONNRESET
+2026-03-06T15:03:32.749Z [sim:hyper-real-default/spawn] [warn] SimRed05 error write ECONNRESET
+2026-03-06T15:03:33.080Z [sim:hyper-real-default/spawn] [warn] SimRed06 error write ECONNRESET
+2026-03-06T15:03:33.327Z [sim:hyper-real-default/spawn] [warn] SimRed04 error write ECONNRESET
+2026-03-06T15:03:33.504Z [sim:hyper-real-default/spawn] [warn] SimBlue04 error write ECONNRESET
+2026-03-06T15:03:33.674Z [sim:hyper-real-default/spawn] [warn] SimBlue03 error write ECONNRESET
+2026-03-06T15:03:34.169Z [sim:hyper-real-default/spawn] [warn] SimRed02 error write ECONNRESET
+2026-03-06T15:03:34.172Z [sim:hyper-real-default/spawn] [warn] SimDirector error read ECONNRESET
+2026-03-06T15:03:34.663Z [sim:hyper-real-default/spawn] [warn] SimBlue02 error write ECONNRESET
+2026-03-06T15:03:37.652Z [sim:hyper-real-default/spawn] [warn] SimBlue06 error write ECONNRESET
+2026-03-06T15:03:38.827Z [sim:hyper-real-default/spawn] [warn] SimBlue05 error write ECONNRESET
+2026-03-06T15:04:38.322Z [sim:hyper-real-default/spawn] [warn] SimBlue04 error client timed out after 60000 milliseconds
+2026-03-06T15:04:38.658Z [sim:hyper-real-default/spawn] [warn] SimBlue02 error client timed out after 60000 milliseconds
+2026-03-06T15:04:38.659Z [sim:hyper-real-default/spawn] [warn] SimRed03 error client timed out after 60000 milliseconds
+2026-03-06T15:04:38.659Z [sim:hyper-real-default/spawn] [warn] SimBlue03 error client timed out after 60000 milliseconds
+2026-03-06T15:04:38.660Z [sim:hyper-real-default/spawn] [warn] SimRed06 error client timed out after 60000 milliseconds
+2026-03-06T15:04:38.673Z [sim:hyper-real-default/spawn] [warn] SimRed04 error client timed out after 60000 milliseconds
+2026-03-06T15:04:38.674Z [sim:hyper-real-default/spawn] [warn] SimRed05 error client timed out after 60000 milliseconds
+2026-03-06T15:04:38.674Z [sim:hyper-real-default/spawn] [warn] SimDirector error client timed out after 60000 milliseconds
+2026-03-06T15:04:38.858Z [sim:hyper-real-default/spawn] [warn] SimBlue05 error client timed out after 60000 milliseconds
+2026-03-06T15:04:38.859Z [sim:hyper-real-default/spawn] [warn] SimBlue06 error client timed out after 60000 milliseconds
