@@ -15,24 +15,19 @@ import org.bukkit.entity.Player;
  */
 public interface IBukkitEffectUtil {
 
+    BukkitEffectUtil DEFAULT_BUKKIT_EFFECT_UTIL = new BukkitEffectUtil();
+
     default BukkitEffectUtil getBukkitEffectUtil() {
-        return DependencyLoaderAccess.findInstance(BukkitEffectUtil.class);
+        BukkitEffectUtil effectUtil = DependencyLoaderAccess.findInstance(BukkitEffectUtil.class);
+        return effectUtil == null ? DEFAULT_BUKKIT_EFFECT_UTIL : effectUtil;
     }
 
     default void playSound(Player player, Sound sound, float volume, float pitch) {
-        BukkitEffectUtil effectUtil = getBukkitEffectUtil();
-        if (effectUtil == null) {
-            return;
-        }
-        effectUtil.playSound(player, sound, volume, pitch);
+        getBukkitEffectUtil().playSound(player, sound, volume, pitch);
     }
 
     default void playSoundToPlayers(Iterable<Player> players, Sound sound, float volume, float pitch) {
-        BukkitEffectUtil effectUtil = getBukkitEffectUtil();
-        if (effectUtil == null) {
-            return;
-        }
-        effectUtil.playSoundToPlayers(players, sound, volume, pitch);
+        getBukkitEffectUtil().playSoundToPlayers(players, sound, volume, pitch);
     }
 
     default void spawnParticle(World world,
@@ -43,11 +38,7 @@ public interface IBukkitEffectUtil {
                                double offsetY,
                                double offsetZ,
                                double extra) {
-        BukkitEffectUtil effectUtil = getBukkitEffectUtil();
-        if (effectUtil == null) {
-            return;
-        }
-        effectUtil.spawnParticle(world, particle, location, count, offsetX, offsetY, offsetZ, extra);
+        getBukkitEffectUtil().spawnParticle(world, particle, location, count, offsetX, offsetY, offsetZ, extra);
     }
 
     default void spawnParticleForPlayers(Iterable<Player> players,
@@ -58,11 +49,8 @@ public interface IBukkitEffectUtil {
                                          double offsetY,
                                          double offsetZ,
                                          double extra) {
-        BukkitEffectUtil effectUtil = getBukkitEffectUtil();
-        if (effectUtil == null) {
-            return;
-        }
-        effectUtil.spawnParticleForPlayers(players, particle, location, count, offsetX, offsetY, offsetZ, extra);
+        getBukkitEffectUtil().spawnParticleForPlayers(players, particle, location, count, offsetX, offsetY, offsetZ,
+                extra);
     }
 
     default void spawnParticle(Player player,
@@ -73,11 +61,7 @@ public interface IBukkitEffectUtil {
                                double offsetY,
                                double offsetZ,
                                double extra) {
-        BukkitEffectUtil effectUtil = getBukkitEffectUtil();
-        if (effectUtil == null) {
-            return;
-        }
-        effectUtil.spawnParticle(player, particle, location, count, offsetX, offsetY, offsetZ, extra);
+        getBukkitEffectUtil().spawnParticle(player, particle, location, count, offsetX, offsetY, offsetZ, extra);
     }
 
     default void spawnFirework(Location location,
@@ -91,20 +75,12 @@ public interface IBukkitEffectUtil {
                                int power,
                                int detonateTicks,
                                boolean silent) {
-        BukkitEffectUtil effectUtil = getBukkitEffectUtil();
-        if (effectUtil == null) {
-            return;
-        }
-        effectUtil.spawnFirework(location, offsetX, offsetY, offsetZ, color, type, flicker, trail, power,
+        getBukkitEffectUtil().spawnFirework(location, offsetX, offsetY, offsetZ, color, type, flicker, trail, power,
                 detonateTicks, silent);
     }
 
     default void setGlowing(Entity entity, boolean glowing) {
-        BukkitEffectUtil effectUtil = getBukkitEffectUtil();
-        if (effectUtil == null) {
-            return;
-        }
-        effectUtil.setGlowing(entity, glowing);
+        getBukkitEffectUtil().setGlowing(entity, glowing);
     }
 
     default void setGlowing(Player player, boolean glowing) {
